@@ -25,9 +25,8 @@ remote: Total 3 (delta 0), reused 0 (delta 0)
 Receiving objects: 100% (3/3), done.  
   
 这一段我没截上，网上随便找了这么一段，大概是个意思。  
-　 
-###3.push文件：   
 
+###3.push文件：  
 `git add .`  
 `git commit -m 'first_commit'`  
 `git remote add origin https://github.com/liuweigg/liuweigg.github.io.git`  
