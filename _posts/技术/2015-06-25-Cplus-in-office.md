@@ -10,11 +10,11 @@ description:
 
 github也是初次接触，还需要多多使用早日熟悉。
 
-###初次上传文件到github
+##初次上传文件到github
 
-1.建立仓库什么的就不说了。
+###1.建立仓库什么的就不说了。
 
-2.clone仓库：
+###2.clone仓库：
 `git clone https://github.com/liuweigg/liuweigg.github.io.git`  
   
 clone成功如下：  
@@ -26,7 +26,7 @@ Receiving objects: 100% (3/3), done.
   
 这一段我没截上，网上随便找了这么一段，大概是个意思。  
 　 
-3.push文件：   
+###3.push文件：   
 
 `git add .`  
 `git commit -m 'first_commit'`  
