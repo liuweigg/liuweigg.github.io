@@ -96,11 +96,10 @@ function contentEffects(){
   }
 }
 function toggleDuoshuoComments(container){
-  alert(document.getElementById('comment-box'));
-  alert(document.getElementById("comment-box"));
-  alert(document.getElementById("comment-box").value);
+  alert(document.getElementById('ds-reset'));
+  alert(document.getElementById("ds-reset"));
   
-    if(document.getElementById('comment-box')){
+    if(document.getElementById('ds-reset')){
       var el = document.createElement('div');//该div不需要设置class="ds-thread"
       el.setAttribute('data-thread-key', '{{ page.id }}');//必选参数
       el.setAttribute('data-url', '{{ site.url }}{{ page.url }}');//必选参数
