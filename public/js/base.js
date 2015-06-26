@@ -96,7 +96,9 @@ function contentEffects(){
   }
 }
 function toggleDuoshuoComments(container){
+    alert(1);
     var ck = document.getElementById('comment-box');
+    alert(ck);
     if(ck != null){
       return true ;
     }
