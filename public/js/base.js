@@ -96,6 +96,9 @@ function contentEffects(){
   }
 }
 function toggleDuoshuoComments(container){
+      var oc = document.getElementById('opencomment');
+      oc.style.display="none";
+      
       var el = document.createElement('div');//该div不需要设置class="ds-thread"
       el.setAttribute('data-thread-key', '{{ page.id }}');//必选参数
       el.setAttribute('data-url', '{{ site.url }}{{ page.url }}');//必选参数
