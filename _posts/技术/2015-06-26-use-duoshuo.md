@@ -27,7 +27,7 @@ category: 技术
 - 代码修改后，在项目的_includes文件中增加一个文件，名称为duoshuo_comments.html，文件中的内容即为上一步修改的代码。
 - 在需要增加评论的地方增加代码：
 
-		{% include duoshuo_comments.html %}
+		{-% include duoshuo_comments.html %-} //去掉-
 
     即完成评论的增加。
 
