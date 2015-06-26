@@ -31,9 +31,6 @@ ga:
 disqus:
   shortname: liuweigg
 
-# 多说账号 设置
-duoshuo_shortname:liuweigg
-
 # 主题设置，自动激活某个标签
 active: 关于
 
