@@ -96,6 +96,10 @@ function contentEffects(){
   }
 }
 function toggleDuoshuoComments(container){
+  alert(document.getElementById('comment-box'));
+  alert(document.getElementById("comment-box"));
+  alert(document.getElementById("comment-box").value);
+  
     if(document.getElementById('comment-box')){
       var el = document.createElement('div');//该div不需要设置class="ds-thread"
       el.setAttribute('data-thread-key', '{{ page.id }}');//必选参数
