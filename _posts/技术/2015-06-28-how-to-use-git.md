@@ -1,3 +1,11 @@
+---
+layout: post
+title: Git详细教程
+category: 技术
+tags: github
+keywords: 
+description: 
+---
 
 # Git详细教程 #
 
