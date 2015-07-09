@@ -13,73 +13,73 @@ description:
 
 	public class MainAndSubThread {
 
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		final PrintMethod pm = new PrintMethod();
-		
-		
-		Thread thread1 = new Thread(){
-			public void run(){
-				//for(int i = 0 ; i < 5 ; i ++ ){
-				while(true){
-					pm.printNum();
+		/**
+		 * @param args
+		 */
+		public static void main(String[] args) {
+			// TODO Auto-generated method stub
+			final PrintMethod pm = new PrintMethod();
+			
+			
+			Thread thread1 = new Thread(){
+				public void run(){
+					//for(int i = 0 ; i < 5 ; i ++ ){
+					while(true){
+						pm.printNum();
+					}
 				}
-			}
-		};
-		
-		thread1.start();
-		
-		Thread thread2 = new Thread(){
-			public void run(){
-				//for(int i = 0 ; i < 5 ; i ++ ){
-				while(true){
-					pm.printString();
+			};
+			
+			thread1.start();
+			
+			Thread thread2 = new Thread(){
+				public void run(){
+					//for(int i = 0 ; i < 5 ; i ++ ){
+					while(true){
+						pm.printString();
+					}
 				}
+			};
+			
+			Thread2.start();
+		  }
+	  	}
+	
+		class PrintMethod{
+		private int num = 1 ;
+		
+		public synchronized void printNum(){
+			for(int i = 0 ; i < num ; i ++ ){
+				System.out.print(1);
 			}
-		};
-		
-		Thread2.start();
-	  }
-  	}
-
-	class PrintMethod{
-	private int num = 1 ;
+			num ++ ;
 	
-	public synchronized void printNum(){
-		for(int i = 0 ; i < num ; i ++ ){
-			System.out.print(1);
-		}
-		num ++ ;
-
-		try {
-			this.notifyAll();
-			this.wait();
-			Thread.sleep(1000); 
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			try {
+				this.notifyAll();
+				this.wait();
+				Thread.sleep(1000); 
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
 		}
 		
-	}
+		public synchronized void printString(){
+			for(int i = 0 ; i < num ; i ++ ){
+				System.out.print("a");
+			}
+			num ++ ;
+			
 	
-	public synchronized void printString(){
-		for(int i = 0 ; i < num ; i ++ ){
-			System.out.print("a");
-		}
-		num ++ ;
-		
-
-		try {
-			this.notifyAll();
-			this.wait();
-			Thread.sleep(1000); 
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+			try {
+				this.notifyAll();
+				this.wait();
+				Thread.sleep(1000); 
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
   	}
 
