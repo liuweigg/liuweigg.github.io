@@ -9,9 +9,9 @@ description:
 
 好吧，这么简单的面试题，当时面试的时候居然写不出来——两个线程，一个线程打印1，一个线程打印a，打印数量不断增加，效果是1aa111aaaa...
 
-package lw.com;
+	package lw.com;
 
-public class MainAndSubThread {
+	public class MainAndSubThread {
 
 	/**
 	 * @param args
@@ -43,9 +43,9 @@ public class MainAndSubThread {
 		
 		Thread2.start();
 	  }
-  }
+  	}
 
-class PrintMethod{
+	class PrintMethod{
 	private int num = 1 ;
 	
 	public synchronized void printNum(){
@@ -80,6 +80,6 @@ class PrintMethod{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-	}
-  }
+		}
+  	}
 
